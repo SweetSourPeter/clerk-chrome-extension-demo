@@ -84,7 +84,7 @@ importers:
         version: 3.2.4
       typescript:
         specifier: 5.3.3
-        version: 5.7.2
+        version: 5.3.3
 
   apps/web-app:
     dependencies:
@@ -162,8 +162,8 @@ importers:
         specifier: ^6.0.0
         version: 6.0.0(eslint@8.57.1)(prettier@3.3.3)(typescript@5.7.2)
       eslint-config-prettier:
-        specifier: ^9.1.0
-        version: 9.1.0(eslint@8.57.1)
+        specifier: ^10.0.0
+        version: 10.0.1(eslint@8.57.1)
       eslint-config-turbo:
         specifier: ^2.3.1
         version: 2.3.3(eslint@8.57.1)
@@ -5632,6 +5632,15 @@ packages:
     engines: {node: '>=12'}
     dev: false
 
+  /eslint-config-prettier@10.0.1(eslint@8.57.1):
+    resolution: {integrity: sha512-lZBts941cyJyeaooiKxAtzoPHTN+GbQTJFAIdQbRhA4/8whaAraEh47Whw/ZFfrjNSnlAxqfm9i0XVAEkULjCw==}
+    hasBin: true
+    peerDependencies:
+      eslint: '>=7.0.0'
+    dependencies:
+      eslint: 8.57.1
+    dev: true
+
   /eslint-config-prettier@9.1.0(eslint@8.57.1):
     resolution: {integrity: sha512-NSWl5BFQWEPi1j4TjVNItzYV7dZXZ+wP6I6ZhrBGpChQhZRUaElihE9uRRkcbRnNb76UMKDF3r+WTmNcGPKsqw==}
     hasBin: true
@@ -9629,6 +9638,12 @@ packages:
     engines: {node: '>=14.17'}
     hasBin: true
     dev: false
+
+  /typescript@5.3.3:
+    resolution: {integrity: sha512-pXWcraxM0uxAS+tN0AG/BF2TyqmHO014Z070UsJ+pFvYuRSq8KH8DmWpnbXe0pEPDHXZV3FcAbJkijJ5oNEnWw==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+    dev: true
 
   /typescript@5.7.2:
     resolution: {integrity: sha512-i5t66RHxDvVN40HfDd1PsEThGNnlMCMT3jMUuoh9/0TaqWevNontacunWyN02LA9/fIbEWlcHZcgTKb9QoaLfg==}
