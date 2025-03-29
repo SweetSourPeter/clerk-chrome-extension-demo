@@ -19,6 +19,7 @@ async function getToken() {
   }
 
   const token = await clerk.session?.getToken();
+  const orgId = clerk.session?.lastActiveOrganizationId;
   return `${token} - ${clerk.user.id}`
 }
 // asdf

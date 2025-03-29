@@ -10,8 +10,11 @@ export const NavBar = () => {
           <Button variant="link" asChild>
             <Link to="/" className="plasmo-mx-2">Home</Link>
           </Button>
+          <Button variant="link" asChild>
+            <Link to="/dashboard" className="plasmo-mx-2">Product Analytics</Link>
+          </Button>
           <Button variant="link" asChild className="plasmo-mx-2">
-            <Link to="/sdk-features">SDK Features</Link>
+            <Link to="/sdk-features">Upcomming Features</Link>
           </Button>
           <div className="plasmo-grow plasmo-items-center plasmo-justify-end plasmo-flex plasmo-pr-2">
             <Button variant="link" asChild className="plasmo-mx-2">
@@ -26,16 +29,6 @@ export const NavBar = () => {
           <Button variant="link" asChild>
             <Link to="/">Home</Link>
           </Button>
-          <div className="plasmo-grow plasmo-items-center plasmo-justify-end plasmo-flex plasmo-pr-2">
-
-            <Button variant="link" asChild className="plasmo-mx-2">
-              <Link to="/sign-in">Sign In</Link>
-            </Button>
-            <Button variant="link" asChild className="plasmo-mx-2">
-
-              <Link to="/sign-up">Sign Up</Link>
-            </Button>
-          </div>
         </div>
       </SignedOut>
 

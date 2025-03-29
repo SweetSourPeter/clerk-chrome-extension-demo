@@ -1,24 +1,24 @@
-import { Button } from "~components/ui/button"
-
 export const SDKFeatures = () => {
   return (
-    <div className="plasmo-px-12 plasmo-pt-6 plasmo-pb-4">
-      <h1 className="plasmo-text-2xl plasmo-mb-6">Background Service Worker Support</h1>
-      <p className="plasmo-text-lg plasmo-py-2">The @clerk/chrome-extension v2.0 SDK now includes support for interacting with Clerk through a Background Service Worker.</p>
-      <p className="plasmo-text-lg plasmo-py-2">v2.0 of the SDK introduces the new `createClerkClient()` helper function. This will also the Background Service Worker to initialize a new Clerk instance and attempt to refresh the user's session.</p>
-      <p className="plasmo-text-lg plasmo-py-2">Once done, you can then get a token or interact with many of Clerk's <a className="plasmo-underline plasmo-cursor-pointer" onClick={() => chrome.tabs.create({ url: "https://clerk.com/docs/references/javascript/overview" })}>Javascript</a> functonality.</p>
-      <p className="plasmo-text-lg plasmo-py-2">The button below will open a new tab and use a content script to send a message to a Background Servie Worker. Since you are signed in, you will end up seeing your session token displayed.</p>
-      <Button
-        variant="default"
-        className="plasmo-mt-4 plasmo-text-xl"
-        onClick={() => {
-          chrome.tabs.create({
-            url: "./tabs/background-worker-demo.html"
-          })
-        }}>
-        Open Demo Tab
-      </Button>
-
+    <div className="plasmo-flex plasmo-flex-col plasmo-items-center plasmo-justify-center plasmo-h-screen plasmo-w-screen plasmo-bg-gradient-to-b plasmo-from-white plasmo-to-gray-50 plasmo-text-black plasmo-p-6">
+      <h1 className="plasmo-text-3xl plasmo-font-bold plasmo-text-center plasmo-bg-clip-text plasmo-text-transparent plasmo-bg-gradient-to-r plasmo-from-blue-600 plasmo-to-purple-600 plasmo-mb-20">
+        Coming Soon
+      </h1>
+      <h2 className="plasmo-text-xl plasmo-font-semibold plasmo-text-gray-800 plasmo-mb-6">
+        1. Extension Invoice Generation
+      </h2>
+      
+      <div className="plasmo-text-center plasmo-max-w-[320px]">
+        <p className="plasmo-text-gray-600 plasmo-leading-relaxed plasmo-py-2">
+          We're excited to announce an upcoming feature that will streamline your invoicing workflow directly from the extension.
+        </p>
+        <p className="plasmo-text-gray-600 plasmo-leading-relaxed plasmo-py-2">
+          Soon, you'll be able to generate and manage invoices without leaving the extension - no more switching to the dashboard for invoice searches!
+        </p>
+        <p className="plasmo-text-gray-600 plasmo-leading-relaxed plasmo-py-2">
+          This feature will be available to all users across every tier, completely free of charge.
+        </p>
+      </div>
     </div>
   )
 }

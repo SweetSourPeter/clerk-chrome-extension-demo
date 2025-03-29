@@ -1,13 +1,45 @@
-import heroIamge from "data-base64:~assets/light-logo.png"
+import heroIamge from "data-base64:~assets/revenue_removebg.png"
 
 export const Home = () => {
   return (
-    <div className="plasmo-flex plasmo-flex-col plasmo-items-center plasmo-justify-center plasmo-h-full plasmo-bg-black plasmo-text-white">
-      <img className="plasmo-h-auto plasmo-mb-8" src={heroIamge} alt="Clerk Chrome Extension SDK 2.0" />
-      <h1 className="plasmo-text-2xl plasmo-font-semibold">Clerk Chrome Extension Demo</h1>
-      <p className="plasmo-text-[16px] plasmo-mx-20 plasmo-my-4">
-        Sign in with the popup or sync your auth state with <a className="plasmo-underline" href="http://localhost:5173">http://localhost:5173</a>, explore an extension built with React Router for tabs and get a token from a tab-based content script using the new <a className="plasmo-underline" href="https://clerk.com/docs/references/chrome-extension/create-clerk-client">createClerkClient()</a> function just for service workers.
-      </p>
+    <div className="plasmo-flex plasmo-flex-col plasmo-items-center plasmo-justify-center plasmo-h-screen plasmo-w-screen plasmo-bg-gradient-to-b plasmo-from-white plasmo-to-gray-50 plasmo-text-black plasmo-p-6">
+      <div className="plasmo-bg-white plasmo-rounded-full plasmo-p-4 plasmo-shadow-lg plasmo-mb-8">
+        <img 
+          className="plasmo-h-[80px] plasmo-w-[80px] plasmo-object-contain" 
+          src={heroIamge} 
+          alt="Revenuealot Logo" 
+        />
+      </div>
+      
+      <h1 className="plasmo-text-3xl plasmo-font-bold plasmo-text-center plasmo-bg-clip-text plasmo-text-transparent plasmo-bg-gradient-to-r plasmo-from-blue-600 plasmo-to-purple-600">
+        Welcome to Revenuealot Extension
+      </h1>
+      
+      <div className="plasmo-mt-6 plasmo-text-center plasmo-max-w-[320px]">
+        <p className="plasmo-text-gray-600 plasmo-leading-relaxed">
+          This extension helps you conduct comprehensive market research. To start, visit a product page on{" "}
+          <a 
+            href="https://www.takealot.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="plasmo-text-blue-600 hover:plasmo-text-blue-700 plasmo-underline"
+          >
+            Takealot.com
+          </a>
+          .
+        </p>
+        
+        <div className="plasmo-mt-8">
+          <a 
+            href={`${process.env.PLASMO_PUBLIC_CLERK_SYNC_HOST}/dashboard`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="plasmo-bg-blue-600 plasmo-text-white plasmo-px-6 plasmo-py-3 plasmo-rounded-full plasmo-font-medium plasmo-transition-all hover:plasmo-bg-blue-700 hover:plasmo-shadow-lg"
+          >
+            Dashboard
+          </a>
+        </div>
+      </div>
     </div>
   );
 };
